@@ -12,4 +12,4 @@ First, you need to find the Load Balancer public IP that sits in front of the NG
 kubectl get service/ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
 ```
 
-Then, you need to update the DNS configuration of your domains (see `variables.tf`) by adding an `A` record pointing to the previous Load Balanacer public IP.
+Then, you need to update the DNS configuration of your domains (see `variables.tf`) by adding an `A` record pointing to the previous Load Balancer public IP.
